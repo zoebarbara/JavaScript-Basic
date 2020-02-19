@@ -1,0 +1,80 @@
+<script>
+
+// Exercici 1
+console.log("Hola mundo");
+
+// Exercici 2
+alert("Me llamo Zoe");
+
+// Exercici 3
+var name="Zoe";
+var surname="Barbara";
+
+console.log(name+surname);
+
+// Exercici 4
+var name=34;
+var name=56;
+
+console.log(34+56);
+
+// Exercici 5
+var score=4;
+
+if (score<=5){
+    alert("Lo siento tu puntuacion: " + score + " no supera el aprobado");
+}else{
+    alert("Felicidades, has aprobado");
+}
+
+
+// Exercici 6 - PART A
+
+var phrase= "Tinc un cotxe de color blau";
+
+var phrase2=phrase.replace("blau","verd");
+
+console.log(phrase2);
+
+
+// Exercici 6 - PART B
+
+var phrase= "Tinc un cotxe de cOlor blau";
+
+var phrase2=phrase.replace(/o/gi,"u");
+
+console.log(phrase2);
+
+
+// Exercici 7
+
+var objects=["taula", "cadira", "ordinador", "libreta"];
+
+for (let object in objects){
+    console.log("L'objecte " + objects[object]+ " está a la posicio "+object);
+}
+
+// Exercici 8
+
+var value1=null;
+var value2=null;
+var operacionCB=null;
+
+
+function calculadora(value1, value2, operacionCB){
+    var suma= value1 + value2;
+    var resta= value1 - value2;
+    var multiplica= value1*value2;
+
+    operacionCB(suma);
+    operacionCB(resta);
+    operacionCB(multiplica);
+
+}
+
+calculadora(20,40,function(resultado){
+    console.log(resultado);
+})
+
+</script>
+
